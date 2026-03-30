@@ -1,12 +1,17 @@
 
 import './App.css'
+import Banner from './components/Banner'
+import NavBar from './components/NavBar'
 
 function App() {
   
 
   return (
     <>
-      <h2 className='text-4xl bg-red-300 justify-between '>Hello world !</h2>
+
+      <NavBar></NavBar>
+      <Banner></Banner>
+
     </>
   )
 }
