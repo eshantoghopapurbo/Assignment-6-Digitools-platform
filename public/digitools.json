@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Resume Builder Pro",
+    "description": "Create ATS-friendly resumes in minutes\nExport and download instantly",
+    "price": 29,
+    "period": "free",
+    "tagType": "popular",
+    "features": ["100+ templates", "ATS optimization", "PDF/DOCX export"],
+    "icon": "https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+  },
+  {
+    "id": 2,
+    "name": "AI Logo Maker",
+    "description": "Generate professional logos with AI\nCustomize and download in HD",
+    "price": 49,
+    "period": "monthly",
+    "tagType": "new",
+    "features": ["AI logo generation", "Brand kit", "Unlimited edits"],
+    "icon": "https://cdn-icons-png.flaticon.com/512/1157/1157109.png"
+  },
+  {
+    "id": 3,
+    "name": "Social Media Scheduler",
+    "description": "Schedule posts across platforms\nAutomate publishing and save time",
+    "price": 19,
+    "period": "monthly",
+    "tagType": "best seller",
+    "features": ["Multi-platform posting", "Analytics dashboard", "Content calendar"],
+    "icon": "https://cdn-icons-png.flaticon.com/512/3662/3662817.png"
+  },
+  {
+    "id": 4,
+    "name": "Invoice Generator",
+    "description": "Create professional invoices instantly\nSend and track payments easily",
+    "price": 79,
+    "period": "free",
+    "tagType": "popular",
+    "features": ["Auto calculations", "PDF export", "Client management"],
+    "icon": "https://cdn-icons-png.flaticon.com/512/942/942748.png"
+  },
+  {
+    "id": 5,
+    "name": "AI Content Writer",
+    "description": "Write blogs, ads, and social content\nAI-powered writing assistant",
+    "price": 15,
+    "period": "monthly",
+    "tagType": "new",
+    "features": ["SEO optimization", "Plagiarism-free text", "Multiple tones"],
+    "icon": "https://cdn-icons-png.flaticon.com/512/4712/4712109.png"
+  },
+  {
+    "id": 6,
+    "name": "QR Code Generator",
+    "description": "Generate custom QR codes instantly\nDownload in high resolution",
+    "price": 39,
+    "period": "free",
+    "tagType": "best seller",
+    "features": ["Unlimited QR codes", "Custom colors", "Logo embedding"],
+    "icon": "https://cdn-icons-png.flaticon.com/512/747/747376.png"
+  }
+]
