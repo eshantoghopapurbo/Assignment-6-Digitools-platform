@@ -1,6 +1,7 @@
 
 import './App.css'
 import Banner from './components/Banner'
+import Footer from './components/Footer'
 import NavBar from './components/NavBar'
 import PricingCart from './components/PricingCart'
 import SectionStats from './components/SectionStats'
@@ -17,8 +18,8 @@ function App() {
       <SectionStats></SectionStats>
       <StepCart></StepCart>
        <PricingCart></PricingCart>
-      
-
+       <Footer></Footer>
+       
     </>
   )
 }

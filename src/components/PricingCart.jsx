@@ -2,7 +2,7 @@ import React from 'react';
 
 const PricingCart = () => {
     return (
-        <div className='container mx-auto border border-red-500 mt-50'>
+        <div className='container mx-auto  mt-50'>
             <div className='grid justify-center items-center my-8'>
                 <h1 className='text-[#101727] font-bold text-4xl'>Simple, Transparent Pricing</h1>
                 <p className='text-[#627382]' >Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
