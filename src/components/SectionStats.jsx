@@ -4,7 +4,7 @@ import LineImg from "../assets/Line 7.png"
 
 const SectionStats = () => {
     return (
-        <div className='bg-gradient-to-r from-[#4F39F6] to-[#9514FA] '>
+        <div className='bg-gradient-to-r from-[#4F39F6] to-[#9514FA]'>
             <div className='flex flex-row md:flex-row justify-center items-center p-8 gap-6 md:gap-20'>
                 <div>
                 <h1  className='text-4xl font-bold text-[#FFFFFF] sm:mb-2' >50K+</h1>

@@ -9,7 +9,7 @@ import cart2 from "../assets/rocket.png"
 const StepCart = () => {
     return (
         <div>
-            <div className='grid justify-center mt-30'>
+            <div className='grid justify-center mt-30 mb-8'>
                 <h1 className='text-5xl font-bold '>Get Started in 3 Steps</h1>
                 <p className='text-[#627382] font-semibold p-4'>Start using premium digital tools in minutes, not hours.</p>
             </div>
@@ -46,7 +46,7 @@ const StepCart = () => {
             </div>
 
             {/* card 3 */}
-      <div className='shadow-lg rounded-lg  border-zinc-600 bg-white h-[380px] '>
+      <div className='shadow-lg rounded-lg  border-zinc-600 bg-white h-[380px]'>
               <div className=' grid justify-end p-2'>
                   <img src={CardImg2}/>
               </div>
@@ -60,8 +60,6 @@ const StepCart = () => {
                  </div>
                 </div>
             </div>
-            
-           
           </div>
         </div>
     );
