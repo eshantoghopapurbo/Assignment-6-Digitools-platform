@@ -15,7 +15,7 @@ const Digitools = ({digitoolPromise}) => {
             <div>
                 {digitools.map(digitool => 
                 <div className ="card w-96 bg-base-100 shadow-sm text-white">
-  <div className="card-body h-[448px] bg-gradient-to-r relative from-[#4F39F6] to-[#9514FA]">
+  <div className="card-body h-[448px] shadow-lg">
     <div className='absolute  -top-4    right-35'>
         <span className="text-[#BB4D00] bg-[#FEF3C6]   rounded-full px-4 py-1">Most Popular</span>
     </div>
