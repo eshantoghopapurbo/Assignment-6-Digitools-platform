@@ -4,10 +4,15 @@ const Card = ({ item,carts,setCarts}) => {
 
     const [isSelected,setIsSelected] =useState(false)
 
+    // const [cardData , setCardData]=useState([])
+
     const handleSelected = () =>{
         setIsSelected (true)
-        setCarts( item)
+        setCarts([...carts, item])
+        
     }
+
+    // console.log(cardData);
 
     return (
       <div>

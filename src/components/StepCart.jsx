@@ -8,7 +8,7 @@ import cart1 from "../assets/package.png"
 import cart2 from "../assets/rocket.png"
 const StepCart = () => {
     return (
-        <div>
+        <div className='z-10'>
             <div className='grid justify-center mt-30 mb-8'>
                 <h1 className='text-5xl font-bold '>Get Started in 3 Steps</h1>
                 <p className='text-[#627382] font-semibold p-4'>Start using premium digital tools in minutes, not hours.</p>

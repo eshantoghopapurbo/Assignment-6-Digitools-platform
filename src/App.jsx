@@ -23,7 +23,7 @@ function App() {
 
   const [activeTab,setActiveTab] =useState ('product');
   const [carts,setCarts] = useState([])
-  console.log(carts);
+  
 
 
   return (
@@ -31,16 +31,40 @@ function App() {
       <NavBar></NavBar>
       <Banner></Banner>
       <SectionStats></SectionStats>
-      <div className='text-center'>
-                <button className='btn rounded-full w-30' onClick={() => setActiveTab ("product")} >Product</button>
-                <button className='btn rounded-full w-30 ' onClick={() => setActiveTab ("card")}>Card</button>
+                  <div className='text-center mt-15'>
+                <h2 className= 'text-5xl font-bold mb-5' >Premium Digital Tools</h2>
+                <p className='text-[#627382] mb-3' >Choose from our curated collection of premium digital products designed <br />to boost your productivity and creativity.</p>
             </div>
+      <div className='text-center space-x-3 my-5'>
+     <button 
+       className={`btn rounded-full w-30 ${
+      activeTab === "product" 
+        ? "bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white" 
+        : "bg-gray-200 text-black"
+    }`}
+       onClick={() => setActiveTab("product")}
+     >
+       Product
+     </button>
+
+  <button 
+    className={`btn rounded-full w-30 ${
+      activeTab === "card" 
+        ? "bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white" 
+        : "bg-gray-200 text-black"
+    }`}
+    onClick={() => setActiveTab("card")}
+  >
+    Cart
+  </button>
+      </div>
+
 
       <Suspense>
       { activeTab === "product" && <Digitool digitoolPromise={digitoolPromise} carts={carts}
       setCarts={setCarts} ></Digitool>}
       </Suspense>
-      { activeTab === "card" && <Cart2></Cart2>}
+      { activeTab === "card" && <Cart2 carts={carts} setCarts={setCarts} > </Cart2>}
 
       <StepCart></StepCart>
        <PricingCart></PricingCart>
