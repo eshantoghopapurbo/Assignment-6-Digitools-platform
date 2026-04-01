@@ -1,4 +1,5 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const Cart2 = ({carts,setCarts}) => {
    const totalPrice = carts.reduce((sum,item) => 
@@ -6,11 +7,13 @@ const Cart2 = ({carts,setCarts}) => {
    
       const handlePayment =() =>{
         setCarts ([])
+         toast.success(`  Your checkout was succesfull ! thanks your purchase   `)
       };
 
       const handleDelete =(item) => {
         const filteredArray = carts.filter(c => c.id !== item.id)
        setCarts(filteredArray)
+       toast.error(` you have select the  ${item.name} !   `)
       }
     
      return (
@@ -20,7 +23,7 @@ const Cart2 = ({carts,setCarts}) => {
                 carts.length === 0 ? <p className='text-center text-3xl p-5'>Cart is empty</p>:
                 <>
                 
-           <div className='space-y-5 mt-4'> 
+           <div className='space-y-5 mt-4   '> 
               {
                 carts.map(item => <div className='flex justify-between shadow-lg border border-blue-500 p-3' key={item.id}>
                    <div className='flex gap-2 '>

@@ -10,16 +10,18 @@ import PricingCart from './components/PricingCart'
 import SectionStats from './components/SectionStats'
 import StepCart from './components/StepCart'
 import Cart2 from './components/Cart2'
+import { ToastContainer } from 'react-toastify'
+
 
 
 const getdigiTools = async () => {
   const res = await fetch ("/digitools.json")
    return res.json ()
 }
- 
+   const digitoolPromise = getdigiTools() 
 
 function App() {
-  const digitoolPromise = getdigiTools() 
+
 
   const [activeTab,setActiveTab] =useState ('product');
   const [carts,setCarts] = useState([])
@@ -69,8 +71,10 @@ function App() {
       <StepCart></StepCart>
        <PricingCart></PricingCart>
        <Footer></Footer>
-    </>
+       <ToastContainer></ToastContainer>
+       </>
   )
-}
+} 
+
 
 export default App
