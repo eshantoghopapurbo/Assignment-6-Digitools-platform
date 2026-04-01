@@ -28,7 +28,7 @@ function App() {
 
   return (
     <>
-      <NavBar></NavBar>
+      <NavBar carts={carts}></NavBar>
       <Banner></Banner>
       <SectionStats></SectionStats>
                   <div className='text-center mt-15'>
@@ -55,7 +55,7 @@ function App() {
     }`}
     onClick={() => setActiveTab("card")}
   >
-    Cart
+    Cart({carts.length})
   </button>
       </div>
 
